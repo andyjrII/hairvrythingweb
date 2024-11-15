@@ -1,42 +1,81 @@
-#root {
-  max-width: 1280px;
+:root {
+  --green: #164734;
+  --sgbusgreen: #6bd425;
+  --amber: #ffbf00;
+  --honeydew: #f0fff0;
+  --mintcream: #f5fff5;
+}
+
+body {
+  min-height: 100vh;
+  place-items: center;
+  background-color: #f5fff5;
+}
+
+.navbar {
+  background-color: var(--mintcream);
+  height: 100px;
+  padding: 0 80px;
+}
+
+.nav-btn {
+  background-color: var(--green);
+  color: var(--mintcream);
+  padding: 10px;
+}
+
+.nav-btn:hover {
+  color: var(--green);
+  border-color: var(--green);
+}
+
+.navbar-brand {
+  color: #daa520;
+  font-weight: bolder;
+  font-size: 2rem;
+}
+
+.navbar-brand:hover {
+  color: #daa520;
+  text-decoration: underline;
+}
+
+.navbar-brand img {
+  width: 100px;
+  margin-right: -25px;
+}
+
+.header {
+  padding: 50px 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header h1 {
+  font-size: 4.5rem;
+  line-height: 1.1;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.header h1 .deep {
+  color: var(--green);
+}
+
+.header h1 .light {
+  color: var(--sgbusgreen);
+}
+
+.header p {
+  font-size: 1.6rem;
+  margin-bottom: 30px;
+  color: var(--green);
+}
+
+.header img {
+  width: 775px;
+  height: 500px;
   margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+  object-fit: cover;
 }

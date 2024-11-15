@@ -1,7 +1,26 @@
-import React from 'react';
+import { Link } from 'react-router-dom';
+import HairLogo from '../assets/logo-01.png';
 
 const Navbar = () => {
-  return <div>Navbar</div>;
+  return (
+    <nav className='navbar'>
+      <div className='container-fluid'>
+        <Link className='navbar-brand' to='/'>
+          <img src={HairLogo} alt='Hairvrything' />
+          airvrything
+        </Link>
+
+        <Link
+          className='btn btn-lg nav-btn'
+          type='submit'
+          role='button'
+          to='#signup'
+        >
+          Join the waitlist
+        </Link>
+      </div>
+    </nav>
+  );
 };
 
 export default Navbar;

@@ -1,23 +1,12 @@
-import { useState } from 'react';
-import hairLogo from './assets/logo-01.png';
+import { BrowserRouter as Router } from 'react-router-dom';
 import './App.css';
+import Home from './pages/Home';
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <>
-      <div>
-        <a href='https://vite.dev' target='_blank'>
-          <img src={hairLogo} className='logo' alt='Vite logo' />
-        </a>
-      </div>
-      <div className='card'>
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-      </div>
-    </>
+    <Router>
+      <Home />
+    </Router>
   );
 }
 
