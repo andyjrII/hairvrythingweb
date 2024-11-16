@@ -3,7 +3,7 @@ import HairLogo from '../assets/logo-01.png';
 
 const Navbar = () => {
   return (
-    <nav className='navbar'>
+    <nav className='navbar fixed-top'>
       <div className='container-fluid'>
         <Link className='navbar-brand' to='/'>
           <img src={HairLogo} alt='Hairvrything' />

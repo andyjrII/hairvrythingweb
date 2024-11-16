@@ -1,6 +1,6 @@
 :root {
   --green: #164734;
-  --sgbusgreen: #6bd425;
+  --sgbusgreen: #1ebc0f;
   --amber: #ffbf00;
   --honeydew: #f0fff0;
   --mintcream: #f5fff5;
@@ -93,13 +93,17 @@ body {
 
 .scroll-box {
   overflow: hidden;
-  width: calc(100% + 12px);
-  background-color: var(--green);
+  width: calc(100% + 8px);
   padding: 40px 0;
   align-items: center;
   margin: 0;
   display: flex;
   position: relative;
+  background-image: url('./assets/images/bg.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 .scroll-box span {
@@ -112,4 +116,100 @@ body {
 .scroll-box .scroll-icon {
   color: var(--sgbusgreen);
   fill: #6bd425;
+}
+
+.who-box {
+  padding: 50px 150px 0 150px;
+  height: 40rem;
+  display: flex;
+  align-items: stretch;
+}
+
+.who-box .image-box {
+  display: flex; /* Ensure Flexbox applies to this div */
+  align-items: flex-end; /* Align image to the bottom of the div */
+  justify-content: center;
+  margin: 0;
+  height: 31.6rem;
+}
+
+.who-box .image-box img {
+  object-fit: cover;
+  width: 775px;
+  max-width: 100%;
+  height: auto;
+}
+
+.who-box .text-box {
+  display: flex; /* Use Flexbox for individual columns */
+  flex-direction: column; /* Align children vertically */
+  justify-content: center;
+  margin: 0;
+}
+
+.who-box h1 {
+  font-size: 4rem;
+  color: var(--sgbusgreen);
+}
+
+.who-box h2 {
+  font-size: 3rem;
+}
+
+.who-box p {
+  font-size: 1.5rem;
+}
+
+.pledge {
+  background-image: url('./assets/images/bg.jpg');
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  padding: 50px 150px;
+}
+
+.pledge h1 {
+  font-size: 4rem;
+  color: var(--honeydew);
+}
+
+.pledge .container {
+  margin-top: 40px;
+}
+
+.pledge .card {
+  width: 35rem;
+  border-radius: 30px;
+  margin: 20px 10px;
+  padding: 40px 20px;
+}
+
+#card-1 {
+  background-color: #ffd54d;
+}
+
+#card-2 {
+  background-color: #d1ffd1;
+}
+
+#card-3 {
+  background-color: #d9ffd9;
+}
+
+#card-4 {
+  background-color: #49d43f;
+}
+
+.pledge .card img {
+  width: 40%;
+}
+
+.pledge .card-body {
+  padding-top: 30px;
+}
+
+.pledge .card-text {
+  font-size: 1.5rem;
 }
