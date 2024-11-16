@@ -19,14 +19,15 @@ body {
 }
 
 .nav-btn {
-  background-color: var(--green);
+  background-color: var(--sgbusgreen);
   color: var(--mintcream);
   padding: 10px;
+  width: 180px;
 }
 
 .nav-btn:hover {
-  color: var(--green);
-  border-color: var(--green);
+  background-color: var(--green);
+  color: var(--honeydew);
 }
 
 .navbar-brand {
@@ -47,9 +48,24 @@ body {
 
 .header {
   padding: 50px 150px;
-  display: flex;
+  height: 40rem;
+  display: flex; /* Flexbox for the entire row */
+  align-items: stretch;
+}
+
+.header .text-box {
+  display: flex; /* Use Flexbox for individual columns */
+  flex-direction: column; /* Align children vertically */
   justify-content: center;
-  align-items: center;
+  margin: 0;
+}
+
+.header .image-box {
+  display: flex; /* Ensure Flexbox applies to this div */
+  align-items: flex-end; /* Align image to the bottom of the div */
+  justify-content: center;
+  margin: 0;
+  height: 37rem;
 }
 
 .header h1 {
@@ -59,10 +75,6 @@ body {
   font-weight: bold;
 }
 
-.header h1 .deep {
-  color: var(--green);
-}
-
 .header h1 .light {
   color: var(--sgbusgreen);
 }
@@ -70,12 +82,34 @@ body {
 .header p {
   font-size: 1.6rem;
   margin-bottom: 30px;
-  color: var(--green);
 }
 
 .header img {
   width: 775px;
-  height: 500px;
-  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
   object-fit: cover;
+}
+
+.scroll-box {
+  overflow: hidden;
+  width: calc(100% + 12px);
+  background-color: var(--green);
+  padding: 40px 0;
+  align-items: center;
+  margin: 0;
+  display: flex;
+  position: relative;
+}
+
+.scroll-box span {
+  color: var(--mintcream);
+  font-size: 1.8em;
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+.scroll-box .scroll-icon {
+  color: var(--sgbusgreen);
+  fill: #6bd425;
 }
