@@ -10,7 +10,7 @@ const Pledge = () => {
       <div className='container'>
         <div className='row mx-auto'>
           <div className='col-md-6 d-flex'>
-            <div className='card text-center ms-auto' id='card-1'>
+            <div className='card text-center ms-auto card-1'>
               <img
                 src={Power}
                 className='card-img-top mx-auto'
@@ -25,7 +25,7 @@ const Pledge = () => {
           </div>
 
           <div className='col-md-6'>
-            <div className='card text-center' id='card-2'>
+            <div className='card text-center card-2'>
               <img
                 src={Grace}
                 className='card-img-top mx-auto'
@@ -43,7 +43,7 @@ const Pledge = () => {
 
         <div className='row mx-auto'>
           <div className='col-md-6 d-flex'>
-            <div className='card text-center ms-auto' id='card-3'>
+            <div className='card text-center ms-auto card-3'>
               <img
                 src={Goals}
                 className='card-img-top mx-auto'
@@ -58,7 +58,7 @@ const Pledge = () => {
           </div>
 
           <div className='col-md-6 text-start'>
-            <div className='card text-center' id='card-4'>
+            <div className='card text-center card-4'>
               <img
                 src={Confidence}
                 className='card-img-top mx-auto'

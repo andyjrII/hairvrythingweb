@@ -3,6 +3,7 @@ import Header from '../components/Header';
 import Navbar from '../components/Navbar';
 import ScrollText from '../components/ScrollText';
 import Pledge from '../components/Pledge';
+import Discover from '../components/Discover';
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
       <ScrollText />
       <HairGoals />
       <Pledge />
+      <Discover />
     </>
   );
 };

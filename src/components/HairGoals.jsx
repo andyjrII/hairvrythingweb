@@ -3,7 +3,7 @@ import Girl from '../assets/images/who-girl.png';
 const HairGoals = () => {
   return (
     <div className='row who-box'>
-      <h1 className='text-center'>We are "Hairvrything"</h1>
+      <h1 className='text-center'>We are "HAIRVRYTHING"</h1>
       <div className='col-6 image-box'>
         <img src={Girl} alt='Girl with comb' />
       </div>

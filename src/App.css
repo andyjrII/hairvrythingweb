@@ -16,6 +16,7 @@ body {
   background-color: var(--mintcream);
   height: 100px;
   padding: 0 80px;
+  box-shadow: 0px 0px 10px #1647341a;
 }
 
 .nav-btn {
@@ -138,6 +139,7 @@ body {
   width: 775px;
   max-width: 100%;
   height: auto;
+  margin-bottom: -10px;
 }
 
 .who-box .text-box {
@@ -148,7 +150,7 @@ body {
 }
 
 .who-box h1 {
-  font-size: 4rem;
+  font-size: 3rem;
   color: var(--sgbusgreen);
 }
 
@@ -171,7 +173,7 @@ body {
 }
 
 .pledge h1 {
-  font-size: 4rem;
+  font-size: 3.5rem;
   color: var(--honeydew);
 }
 
@@ -186,19 +188,19 @@ body {
   padding: 40px 20px;
 }
 
-#card-1 {
+.card-1 {
   background-color: #ffd54d;
 }
 
-#card-2 {
+.card-2 {
   background-color: #d1ffd1;
 }
 
-#card-3 {
+.card-3 {
   background-color: #d9ffd9;
 }
 
-#card-4 {
+.card-4 {
   background-color: #49d43f;
 }
 
@@ -212,4 +214,81 @@ body {
 
 .pledge .card-text {
   font-size: 1.5rem;
+}
+
+.discover {
+  width: 100%;
+  padding: 50px 100px;
+}
+
+.discover h1 {
+  font-size: 3.5rem;
+}
+
+.discover.container {
+  display: flex;
+  overflow: hidden;
+  height: 40rem;
+}
+
+.discover .left-section {
+  flex: 1; /* Take half the width */
+  display: flex; /* Use flexbox */
+  justify-content: center; /* Center horizontally */
+  align-items: center;
+  font-size: 2rem; /* Heading font size */
+  font-weight: bold; /* Bold text for emphasis */
+  padding: 20px; /* Padding for spacing */
+  text-align: center; /* Center-align text */
+}
+
+.discover .right-section {
+  flex: 1; /* Take half the width */
+  display: flex; /* Flexbox for columns */
+  justify-content: space-between; /* Space between the two columns */
+  padding: 20px; /* Padding around the section */
+  gap: 20px; /* Space between the two card containers */
+}
+
+.discover .cards-container {
+  flex: 1; /* Take equal width for each column */
+  overflow: hidden; /* Hide overflowing cards */
+  display: flex;
+  flex-direction: column; /* Stack cards vertically */
+  gap: 10px; /* Space between cards */
+}
+
+.discover .card {
+  padding: 20px 5px;
+  border-radius: 10px;
+  text-align: start;
+  width: 300px;
+  margin: 20px 0;
+  border: none;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.discover .card:hover {
+  transform: scale(1.05); /* Slightly enlarge card */
+  transition: all 0.6s ease;
+}
+
+.discover .card img {
+  width: 80px;
+  padding-left: 15px;
+  padding-top: 20px;
+}
+
+.discover .card .card-body {
+  margin-top: 10px;
+}
+
+.discover .card .card-heading {
+  font-size: 1.1rem;
+  color: var(--green);
+  font-weight: bold;
+}
+
+.discover .card .card-text {
+  font-size: 0.9rem;
 }
