@@ -1,7 +1,13 @@
 import { Link } from 'react-router-dom';
 import HeaderGirl from '../assets/images/header-girl.png';
 
-const Header = () => {
+const Header = ({ formRef }) => {
+  const handleClick = () => {
+    if (formRef.current) {
+      formRef.current.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <div className='row header'>
       <div className='col-6 text-box'>
@@ -16,7 +22,7 @@ const Header = () => {
         </p>
         <Link
           className='btn btn-lg nav-btn'
-          type='submit'
+          onClick={handleClick}
           role='button'
           to='#signup'
         >

@@ -1,12 +1,19 @@
-import React from 'react';
+const Personalized = ({ formRef }) => {
+  const handleClick = () => {
+    if (formRef.current) {
+      formRef.current.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
-const Personalized = () => {
   return (
     <div className='personalized text-center'>
-      <p id='#signup'>
-        Get personalised insights and product picks for your hair.
-      </p>
-      <button className='btn btn-lg nav-btn' type='submit' role='button'>
+      <p>Get personalised insights and product picks for your hair.</p>
+      <button
+        to='#signup'
+        className='btn btn-lg nav-btn'
+        role='button'
+        onClick={handleClick}
+      >
         Join the waitlist
       </button>
     </div>

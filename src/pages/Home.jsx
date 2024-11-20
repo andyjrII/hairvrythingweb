@@ -1,3 +1,4 @@
+import { useRef } from 'react';
 import HairGoals from '../components/HairGoals';
 import Header from '../components/Header';
 import Navbar from '../components/Navbar';
@@ -9,17 +10,19 @@ import Personalized from '../components/Personalized';
 import Footer from '../components/Footer';
 
 const Home = () => {
+  const formRef = useRef(null);
+
   return (
     <>
-      <Navbar />
-      <Header />
+      <Navbar formRef={formRef} />
+      <Header formRef={formRef} />
       <ScrollText />
       <HairGoals />
       <Pledge />
       <Discover />
       <FAQ />
-      <Personalized />
-      <Footer />
+      <Personalized formRef={formRef} />
+      <Footer ref={formRef} />
     </>
   );
 };

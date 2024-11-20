@@ -1,7 +1,13 @@
 import { Link } from 'react-router-dom';
 import HairLogo from '../assets/logo-01.png';
 
-const Navbar = () => {
+const Navbar = ({ formRef }) => {
+  const handleClick = () => {
+    if (formRef.current) {
+      formRef.current.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <nav className='navbar fixed-top'>
       <div className='container-fluid'>
@@ -12,9 +18,9 @@ const Navbar = () => {
 
         <Link
           className='btn btn-lg nav-btn'
-          type='submit'
           role='button'
           to='#signup'
+          onClick={handleClick}
         >
           Join the waitlist
         </Link>

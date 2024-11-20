@@ -2,7 +2,7 @@
   --green: #164734;
   --sgbusgreen: #1ebc0f;
   --amber: #ffbf00;
-  --honeydew: #f0fff0;
+  --honeydew: #e6ffe6;
   --mintcream: #f5fff5;
 }
 
@@ -298,17 +298,18 @@ body {
   font-size: 0.9rem;
 }
 
+.faq {
+  width: 100%;
+  padding: 100px;
+  background-color: var(--honeydew);
+}
+
 .faq h6 {
   color: var(--sgbusgreen);
 }
 
 .faq h1 {
   font-size: 3.5rem;
-}
-
-.faq {
-  width: 100%;
-  padding: 50px 100px;
 }
 
 .accordion-container {
@@ -330,7 +331,7 @@ body {
 }
 
 .accordion-header:hover {
-  background-color: var(--honeydew);
+  background-color: var(--mintcream);
 }
 
 .accordion-header h3 {
@@ -350,12 +351,11 @@ body {
 
 .personalized {
   width: 100%;
-  padding: 50px 100px;
-  background-color: var(--honeydew);
+  padding: 50px 100px 75px 100px;
 }
 
 .personalized p {
-  width: 400px;
+  width: 700px;
   font-size: 2.2rem;
   color: var(--green);
   line-height: 2.5rem;
@@ -364,10 +364,83 @@ body {
 
 footer {
   width: 100%;
-  padding: 50px 100px;
+  padding: 50px;
   background-image: url('./assets/images/bg.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+footer .row {
+  margin: 0 50px;
+}
+
+footer .footer-logo {
+  color: #daa520;
+  font-weight: bolder;
+  font-size: 2.2rem;
+}
+
+footer .footer-logo:hover {
+  color: #daa520;
+  text-decoration: underline;
+}
+
+footer .footer-logo img {
+  width: 100px;
+  margin-right: -25px;
+  margin-left: -30px;
+}
+
+footer p {
+  font-size: 1.4rem;
+  color: var(--mintcream);
+}
+
+footer form input {
+  width: 300px;
+  color: var(--green);
+  padding: 11px 12px 15px 12px;
+  margin: 0 0 10px 0;
+  border-radius: 10px 0 0 10px;
+  border: 1px solid var(--mintcream);
+}
+
+footer form .btn {
+  background-color: var(--sgbusgreen);
+  color: var(--mintcream);
+  font-weight: bold;
+  padding: 12px 0;
+  width: 100px;
+  border-radius: 0 10px 10px 0;
+  border: 2px solid var(--mintcream);
+}
+
+footer form .btn:hover {
+  background-color: var(--green);
+  color: var(--mintcream);
+}
+
+.social-icon {
+  font-size: 25px;
+  margin: 0 10px;
+  fill: var(--mintcream);
+}
+
+.social-icon:hover {
+  fill: var(--amber);
+}
+
+.custom-hr2 {
+  width: 100%;
+  border: 2px solid var(--mintcream);
+}
+
+footer .copy {
+  font-size: 16px;
 }
