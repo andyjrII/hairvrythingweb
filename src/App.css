@@ -416,9 +416,14 @@ footer form .btn {
   color: var(--mintcream);
   font-weight: bold;
   padding: 12px 0;
-  width: 100px;
+  width: 150px;
   border-radius: 0 10px 10px 0;
   border: 2px solid var(--mintcream);
+}
+
+footer form .btn:active {
+  background-color: var(--green);
+  color: var(--mintcream);
 }
 
 footer form .btn:hover {
