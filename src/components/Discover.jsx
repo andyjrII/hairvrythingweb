@@ -13,7 +13,9 @@ const Discover = () => {
     <div className='discover container'>
       {/* Left Section */}
       <div className='left-section'>
-        <h1 className='text-center'>Discover "HAIRVRYTHING"</h1>
+        <h1 className='text-center'>
+          Discover <span className='hairvrything'>"HAIRVRYTHING"</span>
+        </h1>
       </div>
 
       {/* Right Section */}

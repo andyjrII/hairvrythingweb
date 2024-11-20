@@ -18,7 +18,7 @@ const ScrollText = () => {
         }}
         animate={{ x: ['0%', '-50%'] }} // Shift by 50% of container width
         transition={{
-          duration: 30, // Longer duration for slower scrolling
+          duration: 60,
           repeat: Infinity, // Infinite loop
           ease: 'linear', // Smooth motion
         }}

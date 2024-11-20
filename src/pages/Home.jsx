@@ -4,6 +4,9 @@ import Navbar from '../components/Navbar';
 import ScrollText from '../components/ScrollText';
 import Pledge from '../components/Pledge';
 import Discover from '../components/Discover';
+import FAQ from '../components/FAQ';
+import Personalized from '../components/Personalized';
+import Footer from '../components/Footer';
 
 const Home = () => {
   return (
@@ -14,6 +17,9 @@ const Home = () => {
       <HairGoals />
       <Pledge />
       <Discover />
+      <FAQ />
+      <Personalized />
+      <Footer />
     </>
   );
 };
