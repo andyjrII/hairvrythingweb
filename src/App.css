@@ -411,6 +411,32 @@ body {
   font-size: 1.5rem;
 }
 
+@media only screen and (max-width: 480px) {
+  .pledge {
+    padding: 20px 10px;
+  }
+  .pledge h1 {
+    font-size: 2.5rem;
+  }
+  .pledge .container {
+    margin-top: 0;
+  }
+  .pledge .card {
+    width: 100%;
+    margin: 10px 0;
+    padding: 20px 10px;
+  }
+  .pledge .card img {
+    width: 50%;
+  }
+  .pledge .card-body {
+    padding-top: 15px;
+  }
+  .pledge .card-text {
+    font-size: 1rem;
+  }
+}
+
 .discover {
   width: 100%;
   padding: 50px 100px;
@@ -431,7 +457,6 @@ body {
   display: flex; /* Use flexbox */
   justify-content: center; /* Center horizontally */
   align-items: center;
-  font-size: 2rem; /* Heading font size */
   font-weight: bold; /* Bold text for emphasis */
   padding: 20px; /* Padding for spacing */
   text-align: center;
@@ -487,6 +512,45 @@ body {
 
 .discover .card .card-text {
   font-size: 0.9rem;
+}
+
+@media only screen and (max-width: 480px) {
+  .discover {
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  .discover h1 {
+    font-size: 2.5rem;
+  }
+  .discover.container {
+    display: block;
+    width: 100%;
+    height: 50rem;
+  }
+  .discover .left-section {
+    display: block;
+    width: 100%;
+  }
+  .discover .right-section {
+    width: 100%;
+    display: block;
+    padding: 0;
+    background: none;
+  }
+  .discover .cards-container {
+    display: block;
+  }
+  .discover .cards-container .container-2 {
+    display: none;
+  }
+  .discover .card {
+    padding: 15px 5px;
+    width: 90%;
+    margin: 10px 20px;
+  }
+  .discover .card .card-body {
+    margin-top: 5px;
+  }
 }
 
 .faq {

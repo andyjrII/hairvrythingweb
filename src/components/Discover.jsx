@@ -21,7 +21,7 @@ const Discover = () => {
       {/* Right Section */}
       <div className='right-section'>
         {/* Column 1 - Scroll Up */}
-        <div className='cards-container'>
+        <div className='cards-container container-1'>
           <motion.div
             initial={{ y: '100%' }}
             animate={{ y: '-100%' }}
@@ -120,7 +120,7 @@ const Discover = () => {
         </div>
 
         {/* Column 2 - Scroll Down */}
-        <div className='cards-container'>
+        <div className='cards-container container-2'>
           <motion.div
             initial={{ y: '-100%' }}
             animate={{ y: '100%' }}

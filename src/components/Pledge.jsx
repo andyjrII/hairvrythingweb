@@ -9,7 +9,7 @@ const Pledge = () => {
       <h1 className='text-center'>Our Pledge</h1>
       <div className='container'>
         <div className='row mx-auto'>
-          <div className='col-md-6 d-flex'>
+          <div className='col-md-6 col-12'>
             <div className='card text-center ms-auto card-1'>
               <img
                 src={Power}
@@ -24,7 +24,7 @@ const Pledge = () => {
             </div>
           </div>
 
-          <div className='col-md-6'>
+          <div className='col-md-6 col-12'>
             <div className='card text-center card-2'>
               <img
                 src={Grace}
@@ -42,7 +42,7 @@ const Pledge = () => {
         </div>
 
         <div className='row mx-auto'>
-          <div className='col-md-6 d-flex'>
+          <div className='col-md-6 col-12'>
             <div className='card text-center ms-auto card-3'>
               <img
                 src={Goals}
@@ -57,7 +57,7 @@ const Pledge = () => {
             </div>
           </div>
 
-          <div className='col-md-6 text-start'>
+          <div className='col-md-6 col-12'>
             <div className='card text-center card-4'>
               <img
                 src={Confidence}
