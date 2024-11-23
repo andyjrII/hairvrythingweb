@@ -60,7 +60,7 @@ body {
   .navbar-brand {
     margin: auto;
   }
-  .nav-btn {
+  .navbar .nav-btn {
     display: none;
   }
 }
@@ -643,6 +643,24 @@ body {
   margin: 30px auto;
 }
 
+@media only screen and (max-width: 480px) {
+  .personalized {
+    padding: 20px 10px;
+  }
+  .personalized p {
+    width: 100%;
+    font-size: 1.3rem;
+    line-height: 2rem;
+    margin: 10px auto;
+  }
+  .personalized #personalized-btn {
+    width: 100%;
+    height: 300px;
+    margin: 50px 0;
+    z-index: 1000;
+  }
+}
+
 footer {
   width: 100%;
   padding: 50px;
@@ -737,6 +755,37 @@ footer .copy {
   font-size: 16px;
 }
 
+@media only screen and (max-width: 480px) {
+  footer {
+    padding: 20px 0;
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  footer .row {
+    margin: 0;
+  }
+  footer .footer-logo {
+    font-size: 2.2rem;
+  }
+  footer p {
+    font-size: 1.2rem;
+  }
+  footer form {
+    margin-bottom: 20px;
+  }
+  footer form input {
+    width: 100%;
+    padding: 11px 12px 14px 12px;
+    margin: 0 0 10px 0;
+    border-radius: 10px;
+  }
+  footer form .btn {
+    width: 100%;
+    border-radius: 10px;
+  }
+}
+
 @keyframes bounce {
   0%,
   100% {
@@ -745,7 +794,4 @@ footer .copy {
   50% {
     transform: translateY(-10px);
   }
-}
-
-@media only screen and (max-width: 480px) {
 }
