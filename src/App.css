@@ -28,11 +28,13 @@ body {
   color: var(--mintcream);
   padding: 10px;
   width: 180px;
+  transition: transform 0.3s ease-in-out;
 }
 
 .nav-btn:hover {
   background-color: var(--green);
   color: var(--honeydew);
+  animation: bounce 0.6s ease-in-out;
 }
 
 .navbar-brand {
@@ -492,26 +494,25 @@ footer form .btn {
   width: 150px;
   border-radius: 0 10px 10px 0;
   border: 2px solid var(--mintcream);
-}
-
-footer form .btn:active {
-  background-color: var(--green);
-  color: var(--mintcream);
+  transition: transform 0.3s ease-in-out;
 }
 
 footer form .btn:hover {
   background-color: var(--green);
   color: var(--mintcream);
+  animation: bounce 0.6s ease-in-out;
 }
 
 .social-icon {
   font-size: 25px;
   margin: 0 10px;
   fill: var(--mintcream);
+  transition: transform 0.3s ease-in-out;
 }
 
 .social-icon:hover {
   fill: var(--amber);
+  animation: bounce 0.6s ease-in-out;
 }
 
 .custom-hr2 {
@@ -521,4 +522,14 @@ footer form .btn:hover {
 
 footer .copy {
   font-size: 16px;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
 }
