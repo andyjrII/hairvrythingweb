@@ -1,5 +1,7 @@
 import { Link } from 'react-router-dom';
 import HeaderGirl from '../assets/images/header-girl.png';
+import LeftLine from '../assets/images/left-line.png';
+import RightLine from '../assets/images/right-line.png';
 
 const Header = ({ formRef }) => {
   const handleClick = () => {
@@ -31,7 +33,21 @@ const Header = ({ formRef }) => {
       </div>
       <div className='col-6 image-box'>
         <img src={HeaderGirl} alt='Girl' />
+        <span className='span-box' id='left-span'>
+          Curl pattern:3B
+        </span>
+        <span className='span-box' id='right-span'>
+          Hair type:Curl
+        </span>
+        <div className='box-1'></div>
+        <div className='box-2'></div>
+        <div className='box-3'></div>
+        <div className='box-4'></div>
+        <div className='box-5'></div>
+        <div className='box-6'></div>
       </div>
+      <img src={LeftLine} className='dash-line' id='left-line' />
+      <img src={RightLine} className='dash-line' id='right-line' />
     </div>
   );
 };
