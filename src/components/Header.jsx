@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
 import HeaderGirl from '../assets/images/header-girl.png';
 import LeftLine from '../assets/images/left-line.png';
 import RightLine from '../assets/images/right-line.png';
@@ -33,18 +34,54 @@ const Header = ({ formRef }) => {
       </div>
       <div className='col-6 image-box'>
         <img src={HeaderGirl} alt='Girl' />
-        <span className='span-box' id='left-span'>
+        <motion.span className='span-box' id='left-span'>
           Curl pattern:3B
-        </span>
-        <span className='span-box' id='right-span'>
+        </motion.span>
+        <motion.span className='span-box' id='right-span'>
           Hair type:Curl
-        </span>
-        <div className='box-1'></div>
-        <div className='box-2'></div>
-        <div className='box-3'></div>
-        <div className='box-4'></div>
-        <div className='box-5'></div>
-        <div className='box-6'></div>
+        </motion.span>
+        <motion.div
+          className='box-1'
+          whileHover={{ scale: 1.5 }}
+          whileTap={{ scale: 0.75 }}
+          whileDrag={{ scale: 0.9, rotate: 10 }}
+          drag
+        ></motion.div>
+        <motion.div
+          className='box-2'
+          whileHover={{ scale: 1.5 }}
+          whileTap={{ scale: 0.75 }}
+          whileDrag={{ scale: 0.9, rotate: 10 }}
+          drag
+        ></motion.div>
+        <motion.div
+          className='box-3'
+          whileHover={{ scale: 1.5 }}
+          whileTap={{ scale: 0.75 }}
+          whileDrag={{ scale: 0.9, rotate: 10 }}
+          drag
+        ></motion.div>
+        <motion.div
+          className='box-4'
+          whileHover={{ scale: 1.5 }}
+          whileTap={{ scale: 0.75 }}
+          whileDrag={{ scale: 0.9, rotate: 10 }}
+          drag
+        ></motion.div>
+        <motion.div
+          className='box-5'
+          whileHover={{ scale: 1.5 }}
+          whileTap={{ scale: 0.75 }}
+          whileDrag={{ scale: 0.9, rotate: 10 }}
+          drag
+        ></motion.div>
+        <motion.div
+          className='box-6'
+          whileHover={{ scale: 1.5 }}
+          whileTap={{ scale: 0.75 }}
+          whileDrag={{ scale: 0.9, rotate: 10 }}
+          drag
+        ></motion.div>
       </div>
       <img src={LeftLine} className='dash-line' id='left-line' />
       <img src={RightLine} className='dash-line' id='right-line' />
