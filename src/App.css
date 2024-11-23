@@ -455,7 +455,7 @@ body {
 .discover .left-section {
   flex: 1; /* Take half the width */
   display: flex; /* Use flexbox */
-  justify-content: center; /* Center horizontally */
+  justify-content: center;
   align-items: center;
   font-weight: bold; /* Bold text for emphasis */
   padding: 20px; /* Padding for spacing */
@@ -602,6 +602,32 @@ body {
 .accordion-body p {
   margin: 0 0 30px 0;
   font-size: 1.2rem;
+}
+
+@media only screen and (max-width: 480px) {
+  .faq {
+    padding: 20px 10px;
+  }
+  .faq h1 {
+    font-size: 2.5rem;
+  }
+  .accordion-container {
+    max-width: 100%;
+  }
+  .accordion-header {
+    padding: 10px;
+  }
+  .accordion-header h3 {
+    margin: 5px 0;
+    font-size: 1.1rem;
+  }
+  .accordion-body {
+    padding: 10px;
+  }
+  .accordion-body p {
+    margin: 0 0 10px 0;
+    font-size: 1rem;
+  }
 }
 
 .personalized {
