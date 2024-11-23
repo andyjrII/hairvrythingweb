@@ -53,26 +53,30 @@ body {
   margin-right: -25px;
 }
 
+@media only screen and (max-width: 480px) {
+  .navbar {
+    padding: 0;
+  }
+  .navbar-brand {
+    margin: auto;
+  }
+  .nav-btn {
+    display: none;
+  }
+}
+
 .header {
   padding: 50px 150px;
   height: 40rem;
-  display: flex; /* Flexbox for the entire row */
+  display: flex;
   align-items: stretch;
 }
 
 .header .text-box {
-  display: flex; /* Use Flexbox for individual columns */
-  flex-direction: column; /* Align children vertically */
-  justify-content: center;
-  margin: 0;
-}
-
-.header .image-box {
   display: flex;
-  align-items: flex-end;
+  flex-direction: column;
   justify-content: center;
   margin: 0;
-  height: 37rem;
 }
 
 .header h1 {
@@ -89,6 +93,14 @@ body {
 .header p {
   font-size: 1.6rem;
   margin-bottom: 30px;
+}
+
+.header .image-box {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  margin: 0;
+  height: 37rem;
 }
 
 .header .image-box img {
@@ -169,6 +181,75 @@ body {
 .header #right-line {
   top: 25%;
   right: 14.5%;
+}
+
+@media only screen and (max-width: 480px) {
+  .header {
+    margin-top: 100px;
+    padding: 0;
+    display: block;
+    width: 100%;
+    height: 80vh;
+  }
+  .header .text-box {
+    padding: 20px 20px 0 20px;
+    width: 100%;
+  }
+  .header h1 {
+    font-size: 3.2rem;
+    margin-bottom: 20px;
+  }
+  .header p {
+    font-size: 1.2rem;
+  }
+
+  .header .image-box {
+    height: 15rem;
+    width: 100%;
+  }
+
+  .header .image-box img {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .header .image-box .span-box {
+    display: none;
+  }
+
+  .header .image-box .box-1 {
+    top: 24.5%;
+    left: 8%;
+  }
+
+  .header .image-box .box-2 {
+    top: 67%;
+    left: 15%;
+  }
+
+  .header .image-box .box-3 {
+    top: 52%;
+    left: 33.5%;
+  }
+
+  .header .image-box .box-4 {
+    top: 31%;
+    right: 28.3%;
+  }
+
+  .header .image-box .box-5 {
+    top: 66%;
+    right: 24%;
+  }
+
+  .header .image-box .box-6 {
+    top: 83%;
+    right: 7%;
+  }
+
+  .header .dash-line {
+    display: none;
+  }
 }
 
 .scroll-box {
@@ -544,4 +625,7 @@ footer .copy {
   50% {
     transform: translateY(-10px);
   }
+}
+
+@media only screen and (max-width: 480px) {
 }
