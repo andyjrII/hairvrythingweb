@@ -202,51 +202,41 @@ body {
   .header p {
     font-size: 1.2rem;
   }
-
   .header .image-box {
     height: 15rem;
     width: 100%;
   }
-
   .header .image-box img {
     height: 100%;
     object-fit: cover;
   }
-
   .header .image-box .span-box {
     display: none;
   }
-
   .header .image-box .box-1 {
     top: 24.5%;
     left: 8%;
   }
-
   .header .image-box .box-2 {
     top: 67%;
     left: 15%;
   }
-
   .header .image-box .box-3 {
     top: 52%;
     left: 33.5%;
   }
-
   .header .image-box .box-4 {
     top: 31%;
     right: 28.3%;
   }
-
   .header .image-box .box-5 {
     top: 66%;
     right: 24%;
   }
-
   .header .image-box .box-6 {
     top: 83%;
     right: 7%;
   }
-
   .header .dash-line {
     display: none;
   }
@@ -279,6 +269,15 @@ body {
   fill: #6bd425;
 }
 
+@media only screen and (max-width: 480px) {
+  .scroll-box {
+    padding: 30px 0;
+  }
+  .scroll-box span {
+    font-size: 1.5em;
+  }
+}
+
 .who-box {
   padding: 50px 150px 0 150px;
   height: 40rem;
@@ -287,7 +286,7 @@ body {
 }
 
 .who-box .image-box {
-  display: flex; /* Ensure Flexbox applies to this div */
+  display: flex;
   align-items: flex-end; /* Align image to the bottom of the div */
   justify-content: center;
   margin: 0;
@@ -320,6 +319,37 @@ body {
 
 .who-box p {
   font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 480px) {
+  .who-box {
+    padding: 10px 10px 0 10px;
+    height: 35rem;
+    display: block;
+  }
+  .who-box .image-box {
+    width: 100%;
+    display: block;
+    margin: 0;
+    height: 15rem;
+  }
+  .who-box .image-box img {
+    height: 100%;
+  }
+  .who-box .text-box {
+    padding: 10px;
+    display: block;
+    width: 100%;
+  }
+  .who-box h1 {
+    font-size: 2rem;
+  }
+  .who-box h2 {
+    font-size: 1.5rem;
+  }
+  .who-box p {
+    font-size: 1rem;
+  }
 }
 
 .pledge {
