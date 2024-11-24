@@ -18,7 +18,7 @@ const Discover = () => {
 
       {/* Column 3 - smaller screen */}
       <div className='cards-container container-3'>
-        <div>
+        <div className='grid-container'>
           <div className='card card-4'>
             <img
               src={Electronics}

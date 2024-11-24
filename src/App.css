@@ -183,6 +183,66 @@ body {
   right: 14.5%;
 }
 
+@media only screen and (max-width: 992px) {
+  .header {
+    margin-top: 100px;
+    padding: 20px;
+    width: 100%;
+    height: 45rem;
+    display: grid;
+    align-items: end;
+  }
+  .header .text-box {
+    padding: 20px 20px 0 20px;
+    width: 100%;
+  }
+  .header h1 {
+    font-size: 3.2rem;
+    margin-bottom: 20px;
+  }
+  .header p {
+    font-size: 1.4rem;
+  }
+  .header .image-box {
+    width: 100%;
+    height: 29rem;
+  }
+  .header .image-box img {
+    height: auto;
+    object-fit: cover;
+  }
+  .header .image-box .span-box {
+    display: none;
+  }
+  .header .image-box .box-1 {
+    top: 24.5%;
+    left: 8%;
+  }
+  .header .image-box .box-2 {
+    top: 67%;
+    left: 15%;
+  }
+  .header .image-box .box-3 {
+    top: 52%;
+    left: 33.5%;
+  }
+  .header .image-box .box-4 {
+    top: 31%;
+    right: 28.3%;
+  }
+  .header .image-box .box-5 {
+    top: 66%;
+    right: 24%;
+  }
+  .header .image-box .box-6 {
+    top: 83%;
+    right: 7%;
+  }
+  .header .dash-line {
+    display: none;
+  }
+}
+
 @media only screen and (max-width: 480px) {
   .header {
     margin-top: 100px;
@@ -322,6 +382,37 @@ body {
   font-size: 1.5rem;
 }
 
+@media only screen and (max-width: 992px) {
+  .who-box {
+    padding: 20px;
+    height: 55rem;
+    display: block;
+  }
+  .who-box .image-box {
+    width: 100%;
+    display: block;
+    margin: 0;
+    height: 35rem;
+  }
+  .who-box .image-box img {
+    height: 35rem;
+  }
+  .who-box .text-box {
+    padding: 20px;
+    display: block;
+    width: 100%;
+  }
+  .who-box h1 {
+    font-size: 2.3rem;
+  }
+  .who-box h2 {
+    font-size: 1.9rem;
+  }
+  .who-box p {
+    font-size: 1.4rem;
+  }
+}
+
 @media only screen and (max-width: 480px) {
   .who-box {
     padding: 10px 10px 0 10px;
@@ -412,6 +503,32 @@ body {
   font-size: 1.5rem;
 }
 
+@media only screen and (max-width: 992px) {
+  .pledge {
+    padding: 20px;
+  }
+  .pledge h1 {
+    font-size: 2.5rem;
+  }
+  .pledge .container {
+    margin-top: 0;
+  }
+  .pledge .card {
+    width: 100%;
+    margin: 10px 0;
+    padding: 20px 10px;
+  }
+  .pledge .card img {
+    width: 50%;
+  }
+  .pledge .card-body {
+    padding-top: 15px;
+  }
+  .pledge .card-text {
+    font-size: 1rem;
+  }
+}
+
 @media only screen and (max-width: 480px) {
   .pledge {
     padding: 20px 10px;
@@ -476,7 +593,7 @@ body {
 .discover .cards-container {
   overflow: hidden; /* Hide overflowing cards */
   display: flex;
-  flex-direction: column; /* Stack cards vertically */
+  flex-direction: column;
   gap: 10px;
 }
 
@@ -517,6 +634,51 @@ body {
 
 .discover .cards-container .container-3 {
   display: none;
+}
+
+@media only screen and (max-width: 992px) {
+  .discover {
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  .discover h1 {
+    font-size: 2rem;
+  }
+  .discover.container {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .discover .left-section {
+    display: block;
+    width: 100%;
+  }
+  .discover .right-section {
+    width: 100%;
+    display: block;
+    padding: 0;
+    background: none;
+  }
+  .discover .cards-container {
+    display: block;
+  }
+  .discover .container-1,
+  .discover .container-2 {
+    display: none;
+  }
+  .discover .container-3 .grid-container {
+    display: grid; /* Enables grid layout */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+  .discover .card {
+    padding: 10px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .discover .card .card-body {
+    margin-top: 5px;
+  }
 }
 
 @media only screen and (max-width: 480px) {
@@ -762,6 +924,43 @@ footer form .btn:hover {
 
 footer .copy {
   font-size: 16px;
+}
+
+@media only screen and (max-width: 992px) {
+  footer {
+    padding: 20px;
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  footer .row {
+    margin: 0;
+  }
+  footer .footer-logo {
+    font-size: 2.2rem;
+  }
+  footer p {
+    font-size: 1.2rem;
+  }
+  footer form {
+    margin-bottom: 20px;
+  }
+  footer form input {
+    width: 100%;
+    padding: 11px 12px 14px 12px;
+    margin: 0 0 10px 0;
+    border-radius: 10px;
+  }
+  footer form .btn {
+    width: 100%;
+    border-radius: 10px;
+  }
+  footer .col-md-9 {
+    width: 60% !important;
+  }
+  footer .col-md-3 {
+    width: 40% !important;
+  }
 }
 
 @media only screen and (max-width: 480px) {
