@@ -101,11 +101,19 @@ const Footer = forwardRef((props, ref) => {
         <div className='col-md-3 my-auto'>
           <p className='text-center'>Keep in touch with us:</p>
           <div className='social-icons text-center'>
-            <FaInstagram className='social-icon' />
-            <FaFacebookF className='social-icon' />
-            <FaXTwitter className='social-icon' />
-            <FaLinkedinIn className='social-icon' />
-            <Link href='https://www.tiktok.com/@hairvrything'>
+            <Link to='https://www.instagram.com/hairvrything?igsh=aDQ0dGlyNmV4MGc='>
+              <FaInstagram className='social-icon' />
+            </Link>
+            <Link to='https://www.facebook.com/hairvrything?mibextid=kFxxJD'>
+              <FaFacebookF className='social-icon' />
+            </Link>
+            <Link to='https://x.com/hairvrything?s=21&t=ynt8Y0Ct49HKJQjIWDKR8w'>
+              <FaXTwitter className='social-icon' />
+            </Link>
+            <Link to='https://www.linkedin.com/company/hairvrything/'>
+              <FaLinkedinIn className='social-icon' />
+            </Link>
+            <Link to='https://www.tiktok.com/@hairvrything'>
               <FaTiktok className='social-icon' />
             </Link>
           </div>
